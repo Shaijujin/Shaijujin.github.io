@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo">SHAIJU.</h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Backend Developer</p>
+        <h1>Hi, I'm <span>Shaiju</span><br>Jhon from India</h1>
+      </div>
+    </div>
+  </div>
+<!-------------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/IMG_20230601_104057-removebg-preview copy.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a skilled Python developer with a focus on web development and data analysis. Proficient in Python and experienced with frameworks like Flask, Django, and Python FastAPI. I have a solid understanding of HTML, CSS, and JavaScript for frontend development. Experienced in working with SQL databases and utilizing version control systems like Git and GitHub. I am adept at data analysis and visualization using libraries such as Pandas, NumPy, Matplotlib, and Plotly. Passionate about creating efficient web applications and leveraging data to drive insights and decision-making. Dedicated to continuous learning and growth in the field of Python development.</p>
+
+          <div class="top-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>Python (proficient), JavaScript (working knowledge)</li>
+              <li><span>Web Development</span><br>HTML, CSS, Flask, Django, Python FastAPI</li>
+              <li><span>Database Technologies</span><br>MySQL, Mongo, Redis</li>
+              <li><span>Version Control</span><br>Git, GitHub, Bit Bucket</li>
+              <li><span>Software Development Tools</span><br>PyCharm, Visual Studio Code, Postman</li>
+              <li><span>Data Analysis and Visualization</span><br>Pandas, NumPy, Matplotlib, Plotly</li>
+              <li><span>API Integration</span><br>RESTful APIs, JSON, Requests</li>
+              <li><span>Deployment</span><br>Docker</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Dec 2022 - Current</span><br>
+                Web Developer<br>
+                Compunet Connections, Full-time<br>
+                Developed and maintained web applications using FastAPI, MySQL, MongoDB, and Redis.<br>
+                Utilized Python for web development tasks.
+              </li>
+              <li>
+                <span>Nov 2021 - May 2022</span><br>
+                Software Engineer Intern<br>
+                GELBERO IT SOLUTIONS (OPC) PVT LTD, Full-time<br>
+                Gained software engineering experience through internships at GELBERO IT SOLUTIONS.<br>
+                Contributed to various software development projects.<br>
+                Developed oral communication skills through collaborative work with team members.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Jun 2019 - Jul 2021</span><br>
+                BSc in Mathematics<br>
+                St. Alphonsa College of Arts & Science<br>
+                Achieved a grade of 8.6.
+              </li>
+              <li>
+                <span>May 2021 - Nov 2021</span><br>
+                Data Science and Python Course<br>
+                GELBERO IT SOLUTIONS (OPC) PVT LTD<br>
+                Completed a comprehensive Data Science and Python course at GELBERO IT SOLUTIONS.<br>
+                Acquired knowledge and skills in data science concepts and techniques.<br>
+                Developed proficiency in Python programming for data analysis and manipulation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------Services-------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2> Web Development</h2>
+          <p>Custom web app development using Flask, Django, and FastAPI.
+            Integration of MySQL, MongoDB, and Redis for data storage.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-desktop"></i>
+          <h2> Website Design</h2>
+          <p>Responsive website design and development using HTML and CSS.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-cogs"></i>
+          <h2> Software Development</h2>
+          <p>Python and JavaScript development.
+            Implementation of RESTful APIs for seamless data exchange.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------portfolio-------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="image/OIP (1).jpeg">
+          <div class="layer">
+            <h3>Python FastAPI</h3>
+            <p>Efficient API development with Python FastAPI.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+  
+        <div class="work">
+          <img src="image/unnamed (1).jpg">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <p>Responsive and visually appealing website designs.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+  
+        <div class="work">
+          <img src="image/gh.png">
+          <div class="layer">
+            <h3>Database Management</h3>
+            <p>Efficient management of databases using SQL and NoSQL.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  
+  
+<!-------------contact-------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>shaijujiny@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>8270539832</p>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100036467872389"><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/_danger__heart_killer/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/shaiju-shaiju-184270227/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <p>Shaiju Jhon Backend Developer</p>
+
+    </div>
+  </div>
+</div>
+  
+  
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+      }
+
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbymKfmrEsrqMnjWo3HFon_qGPd3bH-_uR-wFqYD3v6MMhYQSm6sPwcR20-b7VnVn3uf/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+
+        },5000)
+        form.reset
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
